@@ -1,1 +1,24 @@
-DATA
+
+# === SECURITY EXCLUSIONS ===
+# NEVER commit the Firebase admin key!
+serviceAccountKey.json
+*.json
+
+# Passwords and Environment Variables
+.env
+
+# === PIKER/PONDWELLER ARTIFACTS ===
+# The persistent browser session (keeps blaznik logged in)
+data/
+BKP
+# Scraping logs
+pondweller.log
+*.log
+
+# === PYTHON STANDARD ===
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
